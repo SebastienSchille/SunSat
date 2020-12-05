@@ -1,0 +1,411 @@
+/* Universal settings */
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'MuseoModerno';
+}
+
+h2 {
+    font-family: 'MuseoModerno';
+    font-size: 35px;  
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h5 {
+    font-family: 'Commissioner';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Commissioner';
+    font-weight: 300;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#sunsat_satellite {
+    width: 135px;
+    height: auto;
+}
+
+/* Navigation */
+
+nav {
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.7em 1.5em;
+}
+
+nav li a {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+nav img {
+    width: 34px;
+    height: 40px;
+}
+
+/* Banner section */
+
+.banner {
+    background-image: url("/resources/images/SunSat_banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.banner_content {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_content img {
+    height: 256px;
+    width:  220px;
+    margin: 0rem 2rem;
+}
+
+.banner_content h1 {
+    font-weight: 300;
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+/* About us */
+
+.about_us a{
+    position: relative;
+    top: -111.375px;
+    visibility: hidden;
+}
+
+.about_us {
+    margin-top: 3rem;
+}
+
+.about_us_banner {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.about_us_banner img {
+    margin-bottom: 0.5rem;
+}
+
+.about_us_content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1% 0;
+}
+
+.our_mission {
+    width: 30%;
+}
+
+.team_photo {
+    width: 28%;
+    max-width: 450px;
+    align-self: center;
+}
+
+.team_photo img {
+    width: 100%;
+    height: auto;
+}
+
+.who_we_are {
+    width: 30%;
+}
+
+.our_mission h3,
+.who_we_are h3 {
+    text-align: center;
+    margin-bottom: 1.1em;
+}
+
+/* Section divider(s) */
+
+.section_divider_projects_top {
+    height: 250px;
+    overflow: hidden;
+    margin: 8rem 0rem;
+    background-image: url('/resources/images/Section_divider_projects_top.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.section_divider_projects_bottom {
+    height: 250px;
+    overflow: hidden;
+    margin: 8rem 0rem;
+    background-image: url('/resources/images/Project\ nova\ photo.jpg');
+    background-attachment: fixed;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.section_divider_projects_bottom {
+    margin-bottom: 5rem !important;
+}
+
+.section_divider_projects_top img {
+    width: 100%;
+    position: relative;
+    top: -14rem;
+}
+
+.section_divider_projects_bottom img {
+    width: 100%;
+    position: relative;
+    top: -4.5rem;
+}
+
+/* Projects */
+
+a.projects {
+    position: relative;
+    top: -111.375px;
+    visibility: hidden;
+}
+
+.project_nova, .hab, .project_cansat {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem 0rem;
+}
+
+.project_nova_info, .hab_info, .project_cansat_info {
+    width: 45%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_nova_info_text h2, .hab_info_text h2, .project_cansat_info_text h2{
+    text-align: center;
+    margin-bottom: 1.05em;
+}
+
+.project_icons_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0rem;
+}
+
+.project_icons_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2em 0em;
+}
+
+.project_icons_data p {
+    margin: 0em 0.3em;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.project_icons_title {
+    text-align: center;
+}
+
+.project_nova_photo, .hab_photo, .project_cansat_photo {
+    width: 28%;
+}
+
+.project_nova_photo img, .hab_photo img, .project_cansat_photo img{
+    width: 100%;
+    height: auto;
+}
+
+.project_divider {
+    text-align: center;
+}
+
+/* Sponsor us */
+
+a.sponsor_us {
+    position: relative;
+    top: -159.375px;
+    visibility: hidden;
+}
+
+.sponsor_us {
+    margin: 6rem 0rem;
+}
+
+.sponsor_us_title h3{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 35px;
+}
+
+.sponsor_us_info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.why_sponsor_us {
+    width: 38%;
+}
+
+.why_sponsor_us h3 {
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+
+.sponsor_us_photo {
+    width: 28%;
+}
+
+.sponsor_us_photo img{
+    width: 100%;
+    height: auto;
+}
+
+/* Contact us */
+
+.contact_us {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6rem 0rem;
+}
+
+.contact_us_text {
+    align-self: center;
+    flex: 1;
+}
+
+.contact_us_text h2 {
+    font-size: 23px;
+    text-align: right;
+}
+
+.social_icons {
+    height: auto;
+    flex: 0.55;
+}
+
+.social_icons_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.contact_us_info {
+    flex: 1;
+}
+
+.contact_us_info p {
+    font-size: 18px;
+}
+
+/* Our Partners */
+
+.our_partners {
+    background-color: lightgray;
+    padding: 3rem 0rem;
+}
+
+.our_partners_title h3{
+    text-align: center;
+    font-size: 35px;
+    margin: 1em 0em;
+}
+
+.our_partners_logos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem 0rem;
+}
+
+.ACSE_department_logo, .Faculty_of_engineering_logo, .u_o_s_logo {
+    width: 14%;
+}
+
+.our_partners_logos img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.footer_logo_uos {
+    width: 10%;
+}
+
+.footer_logo_sunsat{
+    width: 10%;
+}
+
+.footer_logos img {
+    width: 100%;
+    height: auto;
+}
+
+.footer_logo_sunsat img{
+    width: 50%;
+    padding-left: 50%;
+}
+
+.footer_info {
+    text-align: center;
+    width: 60%;
+}
+
+.footer_icons i{
+    padding: 0em 0.5em;
+}
+
+.footer_copyright p {
+    color: whitesmoke;
+    padding: 1em 1em;
+}

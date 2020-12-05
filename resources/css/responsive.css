@@ -1,0 +1,133 @@
+
+/* Monitor queries ONLY*/
+
+@media only screen and (min-width: 1600px) {
+    
+    .about_us_content {
+        align-items: center;
+    }
+}
+
+/* Web queries */ /* Tablet - landscape */
+
+@media only screen and (max-width: 1024px) {
+    .about_us_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our_mission {
+        width: 60%;
+    }
+    
+    .team_photo{
+        width: 38%;
+        align-self: center;
+        margin: 3rem 0rem;
+    }
+
+    .who_we_are {
+        width: 60%;
+    }
+
+    .section_divider_projects_top {
+        background-position: 70% 50%;
+    }
+
+}
+
+ /* Custom Web break point */
+
+@media only screen and (max-width: 900px) {
+    .project_nova, .project_cansat {
+        flex-direction: column-reverse;
+    }
+
+    .hab{
+        flex-direction: column;
+    }
+
+    .project_nova_info, .hab_info, .project_cansat_info {
+        width: 65%;
+        text-align: center;
+    }
+
+    .project_nova_photo, .hab_photo, .project_cansat_photo {
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+
+    .sponsor_us_info {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .sponsor_us_title h3{
+        display: none;
+     }
+
+     .sponsor_us_photo {
+        width: 35%;
+        margin-bottom: 2rem;
+    }
+
+    .why_sponsor_us {
+        width: 65%;
+        text-align: center;
+    }
+
+    .contact_us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_us_text h2, .social_icons {
+        margin-bottom: 2rem;
+    }
+
+    .contact_us_info {
+        text-align: center;
+    }
+
+    .ACSE_department_logo, .Faculty_of_engineering_logo, .u_o_s_logo {
+        width: 20%;
+    }
+
+}
+
+/* Tablet queries - portrait */
+
+@media only screen and (max-width: 780px){
+    nav {
+        display: none;
+    }
+
+    .banner_content h1 {
+        display: none;
+    }
+
+    .our_partners_title h3, .project_nova_info_text h2, .hab_info_text h2, .project_cansat_info_text h2 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile queries */
+
+@media only screen and (max-width: 480px) {
+    .section_divider_projects_top {
+        background-position: 80% 50%;
+    }
+
+    .section_divider_projects_bottom {
+        background-position: 40% 50%;
+    }
+
+    .project_icons_container{
+        display: none;
+    }
+
+    .our_partners_title h3 {
+        font-size: 25px;
+    }
+
+}
