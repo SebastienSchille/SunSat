@@ -40,6 +40,7 @@ p {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #sunsat_satellite {
@@ -291,6 +292,19 @@ a.sponsor_us {
     margin-bottom: 1.3em;
 }
 
+.sponsorship_brochure {
+    margin-top: 1.2em;
+}
+
+.sponsorship_brochure h4, .sponsorship_brochure i {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.sponsorship_brochure h4:hover {
+    color: rgb(28, 45, 194);
+}
+
 .sponsor_us_photo {
     width: 28%;
 }
@@ -359,8 +373,8 @@ a.sponsor_us {
     margin: 5rem 0rem;
 }
 
-.ACSE_department_logo, .Faculty_of_engineering_logo, .u_o_s_logo {
-    width: 14%;
+.ACSE_department_logo, .Faculty_of_engineering_logo, .u_o_s_logo, .JMatPro_logo, .Alumni_fund_logo {
+    width: 12%;
 }
 
 .our_partners_logos img {
