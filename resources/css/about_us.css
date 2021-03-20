@@ -80,7 +80,7 @@ nav img {
 .banner {
     background-image: url("/resources/images/Space\ background.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: -80% 0%;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -145,28 +145,77 @@ nav img {
     height: auto;
 }
 
+/* Teams */
+
+.teams {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0rem;
+}
+
+.team_info {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team_info img {
+    width: 100%;
+    height: auto;
+    margin: 2rem;
+}
+
+.team_info h3::after {
+    background-color: #0C368B; 
+    content: '';
+    display: block;
+    height: 3px;
+    top: 6px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0);
+    width: 70%;
+    transition: 300ms ease-out;
+}
+
+.team_info h3:hover:after {
+    background-color: #0C368B; 
+    content: '';
+    display: block;
+    height: 3px;
+    top: 6px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0);
+    width: 100%;
+}
+
+.team_info h3:hover {
+    color: #0C368B; 
+}
+
 /* AIMS sections */
 
-/*
-.aims {
-    overflow: hidden;
-    background-image: url('/resources/images/Space\ background\ 2.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-*/
 
 .aims {
+    overflow: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/resources/images/Space\ background\ 2.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 4rem 0rem;
 }
 
+
 .aims_heading h3 {
+    color: white;
     text-align: center;
-    margin: 4rem 0rem;
+    margin-bottom: 4rem;
 }
 
 .aims_container {
@@ -179,16 +228,63 @@ nav img {
 .aims_box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     flex-direction: column;
-    width: 180px;
-    height: 180px;
+    width: 190px;
+    height: 190px;
     padding: 20px;
-    border: 5px solid black;
+    border: 5px solid white;
 }
 
 .aims_box h4 {
+    color: white;
     font-size: 20px;
     text-align: center;
     margin-top: 1rem;
+}
+
+/* join us */
+
+.join_us {
+    display: flex;
+    align-items: space-evenly;
+    flex-direction: column;
+    margin: 4rem 0rem;
+}
+
+.join_us h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.join_us_column {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.join_us_info {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    margin: 2rem 0rem;
+}
+
+.join_us_image {
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.join_us_image img {
+    width: 100%;
+    height: auto;
+} 
+
+.join_us_text {
+    width: 70%;
+    text-align: left;
+}
+
+.join_us_text h4 {
+    margin-bottom: 1rem;
 }
