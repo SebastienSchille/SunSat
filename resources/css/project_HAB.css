@@ -7,14 +7,15 @@
     height: 100vh;
     position: relative;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    color: white;
+    text-align: center;
 }
 
 .banner_title {
-    text-align: center;
-    margin: 12rem 0rem;
-    color: white;
+    margin-top: 14rem;
+    margin-bottom: 5rem;
 }
 
 .banner_text1 {
@@ -27,5 +28,141 @@
 
 .banner_text1 p, .banner_text2 p {
     font-size: 20px;
-    margin: 4rem 0rem;
+    margin: 5rem 0rem;
+}
+
+/* HAB breakdown */
+
+.HAB_breakdown {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 0rem;
+}
+
+.HAB_breakdown_title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.HAB_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.HAB_info {
+    width: 25%;
+}
+
+.HAB_info h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.HAB_info h3::after, .HAB_breakdown_title h3::after {
+    background-color: #0C368B; 
+    content: '';
+    display: block;
+    height: 3px;
+    top: 7px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0);
+    transition: 300ms ease-out;
+}
+
+.title h3::after {
+    width: 140px;
+}
+
+.avionics h3::after{
+    width: 90px;
+}
+
+.structures h3::after{
+    width: 120px;
+}
+
+.HAB_info p {
+    text-align: justify;
+}
+
+.HAB_photo {
+    width: 35%;
+}
+
+.HAB_photo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Meet the team */
+
+.team {
+    margin: 6rem 0rem;
+}
+
+.team_title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.team_title h3::after {
+    background-color: #0C368B; 
+    content: '';
+    display: block;
+    height: 3px;
+    top: 8px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0);
+    transition: 300ms ease-out;
+    width: 150px;
+}
+
+.team_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team_member {
+    width: 15%;
+    min-width: 300px;
+    margin: 2rem 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team_member_photo {
+    width: 70%;
+}
+
+.team_member_info h3 {
+    padding-top: 6px;
+    font-size: 18px;
+}
+
+.team_member h3::after {
+    background-color: #0C368B; 
+    content: '';
+    display: block;
+    height: 3px;
+    top: 6px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0);
+    transition: 300ms ease-out;
+    width: 150px;
+}
+
+.team_member_info h4 {
+    font-size: 16px;
+    padding-top: 12px;
+}
+
+.team_member_photo img{
+    width: 100%;
+    height: auto;
 }
