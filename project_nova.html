@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fba810badd.js" crossorigin="anonymous"></script>
+    <script src="/resources/javascript/tabs.js"></script>
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
     <link href="./resources/css/fonts.css" rel="stylesheet" type="text/css">
     <link href="./resources/css/universal.css" rel="stylesheet" type="text/css">
@@ -86,9 +87,10 @@
         </section>
         <section class="team">
             <div class="team_title">
-                <h3>MEET THE TEAM</h3>
+                <button class="tablinks nova_tab" id="defaultOpen" onclick="openTeams(event, 'Nova_team')"><h3>Nova Team</h3></button>
+                <button class="tablinks management_tab" onclick="openTeams(event, 'Management_team')"><h3>Managemnet Team</h3></button>
             </div>
-            <div class="team_container">
+            <div class="tabcontent" id="Nova_team">
                 <div class="team_member">
                     <div class="team_member_photo">
                         <img src="./resources/images/Headshots/Hutheyfa A El Hames - Avionics Team Lead.jpg" alt="Headshot of Hutheyfa El-Hames">
@@ -134,6 +136,26 @@
                         <h4>Avionics Team Member</h4>
                     </div>
                 </div>
+                <div class="team_member">
+                    <div class="team_member_photo">
+                        <img src="./resources/images/Headshots/Waleed Hamad-Avionics.jpg" alt="Headshot of Waleed Hamad">
+                    </div>
+                    <div class="team_member_info">
+                        <h3>Waleed Hamad</h3>
+                        <h4>Avionics Team Member</h4>
+                    </div>
+                </div>
+                <div class="team_member">
+                    <div class="team_member_photo">
+                        <img src="./resources/images/Headshots/Albert Bru Alvarez - Structures.jpg" alt="Headshot of Albert Bru Alvarez">
+                    </div>
+                    <div class="team_member_info">
+                        <h3>Albert Bru Alvarez</h3>
+                        <h4>Structures Team Member</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="tabcontent" id="Management_team">
                 <div class="team_member">
                     <div class="team_member_photo">
                         <img src="./resources/images/Headshots/Waleed Hamad-Avionics.jpg" alt="Headshot of Waleed Hamad">

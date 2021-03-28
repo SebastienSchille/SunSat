@@ -44,6 +44,16 @@ a {
     color: black;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 #sunsat_satellite {
     width: 135px;
     height: auto;
@@ -86,7 +96,6 @@ nav img {
     position: absolute;
     background-color: black;
     width: 130px;
-    box-shadow: 0px 8px 160px 0px black;
     z-index: 10;
 }
 

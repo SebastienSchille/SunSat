@@ -189,11 +189,16 @@
 }
 
 .team_title {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 4rem;
 }
 
-.team_title h3::after {
+.team_title h3 {
+    padding-right: 2rem;
+}
+
+.nova_tab h3::after, .management_tab h3::after {
     background-color: #0C368B; 
     content: '';
     display: block;
@@ -203,13 +208,53 @@
     position: relative;
     transform: translate(-50%,0);
     transition: 300ms ease-out;
-    width: 150px;
 }
 
-.team_container {
-    display: flex;
+.nova_tab h3:hover::after, .management_tab h3:hover::after {
+    background-color: #0C368B; 
+    content: '';
+    display: block;
+    height: 3px;
+    top: 8px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0);
+    transition: 300ms ease-out;
+}
+
+.nova_tab h3::after {
+    width: 100px;
+}
+
+.management_tab h3::after {
+    width: 190px;
+}
+
+.nova_tab h3:hover {
+    color: #0C368B;
+}
+
+.nova_tab h3:hover::after {
+    width: 130px;
+}
+
+.management_tab h3:hover::after {
+    width: 240px;
+}
+
+.tabcontent {
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.tabcontent {
+    animation: fadeEffect 0.5s;
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .team_member {
